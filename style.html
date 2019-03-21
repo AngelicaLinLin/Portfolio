@@ -1,103 +1,100 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type='text/css'>
-    <title>Styleguide</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </head>
+
 <body>
+    <!-- Hero -->
+    <section class="homePage">
+        <h1>StyleGuide</h1>
+        <h3>Portfolio Page</h3>
+        <div class="homePage-container">
+            <a class="homePage1" href="home.html">Home</a>
+            <a class="homePage1" href="#tab-work">Work</a>
+            <a class="homePage1" href="#tab-About">About</a>
+            <a class="homePage1" href="contact.html">Contact</a>
 
-
-        <nav class="navigation-bar">
-            <a href="home.html#home" class="navigation-button smoothScroll"> Home</a>
-            <a href="index.html#projects" class="navigation-button smoothScroll"> Projects </a>
-            <a href="index.html#contact" class="navigation-button smoothScroll"> Contact </a>
-        </nav>
-
-    <section class="top-background">
-        <div class="top-title">
-            <h1 class="name-title">Styleguide</h1>
-
-            <a href="#interactive-element" class="name-text">Interactive Elements,&nbsp;&nbsp;</a>
-            <a href="#text-element" class="name-text">Text Elements,&nbsp;&nbsp; </a>
-            <a href="#combined-element" class="name-text">Combined Elements</a>
+            <span class="homePage1-slider"></span>
         </div>
-
     </section>
-    <div class="main">
-        <section id=interactive-element>
-            <h2>Interactive Elements</h2>
-
-            <!-- In Text Link Example -->
-            <section id=link class="element">
+    <!-- Main -->
+    <main class="et-main">
+        <section class="homePage-slide" id="tab-">
+            <h1>Interactive Elements</h1>
+            <div class="element">
                 <h2>In-Text Link</h2>
                 <h3>CSS Selector:</h3>
                 <p>.intext-link</p>
                 <h3>Sample Code:</h3>
                 <h4>HTML :</h4>
-                <div class="codestyle">
-                    <code>&lt;a href="#" class="intext-link"&gt;Default Link&lt;/a&gt;</code>
-                    <h4>CSS:</h4>
 
-                    <code>
-                        .intext-link{
-                        color: rgb(74,105,189);
-                        transition-duration: 0.2s;
-                        text-decoration: none;
-                        }
+                <code>&lt;a href="#" class="intext-link"&gt;Default Link&lt;/a&gt;</code>
+                <h4>CSS:</h4>
+                <code>
+                    .intext-link{
+                    color: rgb(74,105,189);
+                    transition-duration: 0.2s;
+                    text-decoration: none;
+                    }
 
 
-                        .intext-link:hover, .intext-link:active, .intext-link:focus {
-                        color: rgb(130,204,221);
-                        text-decoration: none;}
-                    </code>
-                </div>
-
+                    .intext-link:hover, .intext-link:active, .intext-link:focus {
+                    color: rgb(130,204,221);
+                    text-decoration: none;}
+                </code>
                 <h3>Rendered Element:</h3>
                 <a href="#" class="intext-link">Default Link</a>
-            </section>
-            <hr class="about-line">
-            <!-- Navigation Button Example -->
-            <section id=navigation class="element">
+
+            </div>
+        </section>
+        <section class="homePage-slide" id="tab-Contact">
+            <div class="element1">
                 <h2>Navigation Button</h2>
                 <h3>CSS Selector:</h3>
                 <p>.navigation-button</p>
                 <h3>Sample Code:</h3>
                 <h4>HTML :</h4>
-                <div class="codestyle">
-                    <code>&lt;a href="#" class="navigation-button"&gt;Default Navigation Button&lt;/a&gt;</code>
-                    <h4>CSS :</h4>
 
-                    <code>
-                        .navigation-button {
-                        color:rgb(30,55,153);
-                        text-decoration: none;
-                        transition-duration: 1s;
-                        padding: 1rem;
-                        margin-right: 0.5rem;
-                        }
+                <code>&lt;a href="#" class="navigation-button"&gt;Default Navigation Button&lt;/a&gt;</code>
+                <h4>CSS :</h4>
+                <code>
+                    .navigation-button {
+                    color:rgb(30,55,153);
+                    text-decoration: none;
+                    transition-duration: 1s;
+                    padding: 1rem;
+                    margin-right: 0.5rem;
+                    }
 
 
-                        .navigation-button:hover, .navigation-button:active, .navigation-button:focus {
-                        color: rgb(250,250,250);
-                        background-color: rgb(30,55,153);
-                        text-decoration: none;
-                        }
-                    </code>
-                </div>
+                    .navigation-button:hover, .navigation-button:active, .navigation-button:focus {
+                    color: rgb(250,250,250);
+                    background-color: rgb(30,55,153);
+                    text-decoration: none;
+                    }
+                </code>
+
                 <h3>Rendered Element:</h3>
                 <div class="buttonbg">
                     <a href="#" class="navigation-button">Default Navigation Button</a>
                 </div>
-            </section>
-            <hr class="about-line">
-            <section class="element">
-                <h3>Image as a Link</h3>
-                <h4>CSS selector:</h4>
+            </div>
+        </section>
+
+        <section class="homePage-slide" id="tab-Contact">
+            <div class="element1">
+                <h2>Image as a Link</h2>
+                <h3>CSS Selector:</h3>
                 <p>.zoom</p>
-                <h4>Sample code:</h4>
+                <h3>Sample Code:</h3>
                 <code>
                     &lt;a href="1.jpg"&gt;
                     &lt;img class="zoom" src="img/1.jpg" alt="1 reference" &gt;
@@ -109,371 +106,238 @@
                 <a href="1.jpg">
                     <img class="zoom" src="img/1.jpg" alt="1 reference">
                 </a>
-            </section>
-            <hr class="about-line">
-            <!-- Submit Button Example -->
-            <section id=submit class="element">
+
+            </div>
+        </section>
+        <section class="homePage-slide" id="tab-Contact">
+            <div class="element1">
                 <h2>Submit Button</h2>
                 <h3>CSS Selector:</h3>
                 <p>.submit-button</p>
                 <h3>Sample Code:</h3>
                 <h4>HTML :</h4>
-                <div class="codestyle">
-                    <code>&lt;a href="#" class="submit-button"&gt;Default Submit Button&lt;/a&gt;</code>
-                    <h4>CSS :</h4>
+                <code>&lt;a href="#" class="submit-button"&gt;Default Submit Button&lt;/a&gt;</code>
+                <h4>CSS :</h4>
+                <code>
+                    .submit-button{
+                    color: rgb(255,255,255);
+                    background-color: rgb(248,194,145);
+                    text-decoration: none;
+                    transition-duration: 0.5s;
+                    padding: 1rem;
+                    font-size: 1rem;
 
-                    <code>
-                        .submit-button{
-                        color: rgb(255,255,255);
-                        background-color: rgb(248,194,145);
-                        text-decoration: none;
-                        transition-duration: 0.5s;
-                        padding: 1rem;
-                        font-size: 1rem;
-
-                        }
+                    }
 
 
-                        .submit-button:hover, .submit-button:active, .submit-button:focus {
-                        color:rgb(248,194,145);
-                        background-color: rgb(255,255,255);
-                        text-decoration: none;
-                        }
+                    .submit-button:hover, .submit-button:active, .submit-button:focus {
+                    color:rgb(248,194,145);
+                    background-color: rgb(255,255,255);
+                    text-decoration: none;
+                    }
 
-                    </code>
-                </div>
+                </code>
+
                 <h3>Rendered Element:</h3>
                 <a href="#" class="submit-button">Default Submit Button</a>
-            </section>
-            <hr class="about-line">
-            <!-- Reset Button Example -->
-            <section id=reset-button class="element">
+            </div>
+        </section>
+        <section class="homePage-slide" id="tab-Contact">
+            <div class="element1">
                 <h2>Reset Button</h2>
                 <h3>CSS Selector:</h3>
                 <p>.reset-button</p>
                 <h3>Sample Code:</h3>
                 <h5>HTML :</h5>
-                <div class="codestyle">
-                    <code>&lt;a href="#" class="reset-button"&gt;Default Reset Button&lt;/a&gt;</code>
-                    <h5>CSS :</h5>
-
-                    <code>
-                        .reset-button {
-                        color:rgb(255,255,255);
-                        background-color: rgb(250,211,144);
-                        text-decoration: none;
-                        transition-duration: 0.5s;
-                        font-size: 1rem;
-                        padding: 1rem;
-                        }
+                <code>&lt;a href="#" class="reset-button"&gt;Default Reset Button&lt;/a&gt;</code>
+                <h5>CSS :</h5>
+                <code>
+                    .reset-button {
+                    color:rgb(255,255,255);
+                    background-color: rgb(250,211,144);
+                    text-decoration: none;
+                    transition-duration: 0.5s;
+                    font-size: 1rem;
+                    padding: 1rem;
+                    }
 
 
-                        .reset-button:hover, .reset-button:active, .reset-button:focus {
-                        color:rgb(250,211,144);
+                    .reset-button:hover, .reset-button:active, .reset-button:focus {
+                    color:rgb(250,211,144);
 
-                        }
+                    }
 
-                    </code>
-                </div>
+                </code>
                 <h3>Rendered Element:</h3>
                 <a href="#" class="reset-button">Default Reset Button</a>
-            </section>
-            <hr class="about-line">
-            <!-- Text Input Field Example -->
-            <section id=text-field class="element">
-                <h2>Text Input Field</h2>
-                <h3>CSS Selector:</h3>
-                <p>.text-field</p>
-                <h3>Sample Code</h3>
-                <div class="codestyle">
-                    <code>
-                        &lt;form&gt;
-                        &lt;input class="text-field" type="text" name="text-field maxlength="15" placeholder="Default Text Input"&gt;
-                        &lt;/form&gt;
-                    </code>
-                </div>
-                <h3>Rendered Element:</h3>
-                <form> <input class="text-field" type="text" name="text-field" maxlength="15" placeholder="Default Text Input"></form>
-            </section>
-            <hr class="about-line">
-            <!-- Label Example -->
-            <section id=label-field class="element">
+            </div>
+        </section>
+
+        <section class="homePage-slide" id="">
+            <div class="element1">
                 <h2>Label</h2>
                 <h3>CSS Selector:</h3>
                 <p>.label</p>
                 <h3>Sample Code</h3>
-                <div class="codestyle">
-                    <code>
-                        &lt;form&gt;
-                        &lt;label class="label-field" for="label"&gt;Default Label&lt;/label&gt;
-                        &lt;input class="text-field" type="text" name="text-field maxlength="15" placeholder="Default Text Input"&gt;
-                        &lt;/form&gt;
-                    </code>
-                </div>
+
+                <code>
+                    &lt;form&gt;
+                    &lt;label class="label-field" for="label"&gt;Default Label&lt;/label&gt;
+                    &lt;input class="text-field" type="text" name="text-field maxlength="15" placeholder="Default Text Input"&gt;
+                    &lt;/form&gt;
+                </code>
+               
                 <h3>Rendered Element</h3>
                 <form> <label class="label-field" for="label">Default Label: </label><input class="text-field" type="text" name="text-field" maxlength="15" placeholder="Default Text Input"></form>
-            </section>
+            </div>
         </section>
-            <hr class="about-line">
-            <!-- Heading2 Example -->
-            <section id=text-element class="element">
-                <h2>Text Elements</h2>
-                <section id=Heading-1>
-                    <h2>Heading 2</h2>
-                    <h3>CSS Selector:</h3>
-                    <p>h2</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <div class="codestyle">
-                        <code>&lt;h2&gt;Default Heading 2&lt;/h2&gt;</code>
-                    </div>
-                    <h3>Rendered Element</h3>
-                    <h2>Default Heading 2</h2>
-                </section>
-                <hr class="about-line">
-                <!--Heading3 -->
-                <section id=Heading-3 class="element">
-                    <h2>Heading 3</h2>
-                    <h3>CSS Selector:</h3>
-                    <p>h3</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <code>&lt;h3&gt;Default Heading 3&lt;/h3&gt;</code>
-                    <h3>Rendered Element</h3>
-                    <h3>Default Heading 3</h3>
-                </section>
-                <hr class="about-line">
-                <!--Heading4 Example -->
-                <section id=Heading-4 class="element">
-                    <h2>Heading 4</h2>
-                    <h3>CSS Selector:</h3>
-                    <p>h4</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <div class="codestyle">
-                        <code>&lt;h3&gt;Default Heading 4&lt;/h3&gt;</code>
-                    </div>
-                    <h3>Rendered Element</h3>
-                    <h4>Default Heading 4</h4>
-                </section>
-                <hr class="about-line">
-                <!-- Paragraph Example -->
-                <section id=Paragraph class="element">
-                    <h2>Paragraph</h2>
-                    <h3>CSS Selector:</h3>
-                    <p>p</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <div class="codestyle">
-                        <code>&lt;p&gt;Default Paragraph&lt;/p&gt;</code>
-                    </div>
-                    <h3>Rendered Element</h3>
-                    <div class="codestyle">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur elit mi, ac lobortis dolor mattis quis. Suspendisse tempor dolor eget posuere luctus. Duis maximus, tortor eget posuere tempor, ipsum odio bibendum lectus, non elementum metus eros posuere odio. Ut consequat tortor nec urna efficitur consectetur. Integer convallis sem vitae pulvinar volutpat. Morbi eu porta diam. Ut efficitur elit posuere congue scelerisque. Phasellus nec felis ac sem tincidunt rhoncus. Duis et fermentum purus. Nulla ultricies dui eu felis placerat imperdiet rutrum ut urna. In at erat lorem. Suspendisse potenti. Quisque aliquet dui vitae mi faucibus, nec pellentesque turpis maximus. In facilisis vestibulum malesuada.</p>
-                    </div>
-                </section>
-                <hr class="about-line">
-                <!-- Bulleted List Example -->
-                <section id=Bullet-List class="element">
-                    <h2>Bullet List</h2>
-                    <h3>CSS Selector:</h3>
-                    <p>ul</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <div class="codestyle">
-                        <code>
-                            &lt;ul&gt;<br>
-                            &lt;li&gt; item 1&lt;/li&gt; <br>
-                            &lt;li&gt; item 2&lt;/li&gt; <br>
-                            &lt;li&gt; item 3&lt;/li&gt; <br>
-                            &lt;/ul&gt;
-                        </code>
-                    </div>
 
-                    <h3>Rendered Element</h3>
-                    <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ul>
-                </section>
-                <hr class="about-line">
-                <!-- Numbered List Example -->
-                <section id=Numbered-List class="element">
-                    <h2>Number List</h2>
-                    <h3>CSS Selector:</h3>
-                    <p>ol</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <div class="codestyle">
-                        <code>
-                            &lt;ol&gt;<br>
-                            &lt;li&gt; item 1&lt;/li&gt; <br>
-                            &lt;li&gt; item 2&lt;/li&gt; <br>
-                            &lt;li&gt; item 3&lt;/li&gt; <br>
-                            &lt;/ol&gt;
-                        </code>
-                    </div>
-                    <h3>Rendered Element</h3>
-                    <ol>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ol>
-                </section>
-            </section>
-            <hr class="about-line">
-            <section id="combined-element" class="element">
-                <!-- Main Navigation -->
-                <section id=main-navigation>
-                    <h2>Main Navigation</h2>
-                    <h3>CSS Selector</h3>
-                    <p>.navigation-button</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <div class="codestyle">
-                        <code>
-                            &lt;a href="#" class="navigation-button"&gt; Home &lt;/a&gt;
-                            &lt;a href="#" class="navigation-button"&gt; Projects &lt;/a&gt;
-                            &lt;a href="#" class="navigation-button"&gt; Contact &lt;/a&gt;
-                        </code>
-                    </div>
-                    <h4>CSS :</h4>
-                    <div class="codestyle">
-                        <code>
-                            .navigation-button {
-                            color:rgb(139,199,55);
-                            text-decoration: none;
-                            transition-duration: 1s;
-                            padding: 1rem;
-                            border-radius: 1rem;
-                            margin-right: 0.5rem;
-                            }
+        <section class="homePage-slide" id="">
+            <div class="element1">
+                <h2>Paragraph</h2>
+                <h3>CSS Selector:</h3>
+                <p>p</p>
+                <h3>Sample Code</h3>
+                <h4>HTML :</h4>
+                <code>&lt;p&gt;Default Paragraph&lt;/p&gt;</code>
+                <h3>Rendered Element:</h3>
+                <h2>Default Heading 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  rhoncus. Duis et fermentum purus. Nulla ultricies dui eu felis placerat imperdiet rutrum ut urna. In at erat lorem. Suspendisse potenti. Quisque aliquet dui vitae mi faucibus.</p>
+            </div>
+        </section>
+        <!--<section class="homePage-slide" id="tab-Contact">
+        <div class="element1">
+            <h2>Bullet List</h2>
+            <h3>CSS Selector:</h3>
+            <p>ul</p>
+            <h3>Sample Code</h3>
+            <h4>HTML :</h4>
+            <code>
+                &lt;ul&gt;<br>
+                &lt;li&gt; item 1&lt;/li&gt; <br>
+                &lt;li&gt; item 2&lt;/li&gt; <br>
+                &lt;li&gt; item 3&lt;/li&gt; <br>
+                &lt;/ul&gt;
+            </code>
 
-                            <br>
-                            .navigation-button:hover, .navigation-button:active, .navigation-button:focus {
-                            color: rgb(250,250,250);
-                            background-color: rgb(139,199,55);
-                            text-decoration: none;
-                            border-radius: 2rem;
-                            }
-                        </code>
-                    </div>
-                    <h3>Rendered Element</h3>
-                    <div class="buttonbg">
-                        <a href="#" class="navigation-button"> Home </a>
-                        <a href="#" class="navigation-button"> Projects </a>
-                        <a href="#" class="navigation-button"> Contact </a>
-                    </div>
-                </section>
+            <h3>Rendered Element</h3>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+    </section>-->
+        <!--<section class="homePage-slide" id="tab-Contact">
+        <div class="element1">
+            <h2>Grid Structure</h2>
+            <h3>CSS Selector</h3>
+            <p>.grid-container, .grid</p>
+            <h3>Sample Code</h3>
+            <h4>HTML :</h4>
+            <code>
+                &lt;div class="grid-container"&gt; <br>
+                &lt;div class="grid"&gt;    <br>
+                &lt;p&gt;Grid 1&lt;/p&gt; <br>
+                &lt;/div&gt; <br>
+                &lt;div class="grid"&gt;<br>
+                &lt;p&gt;Grid 2&lt;/p&gt; <br>
+                &lt;/div&gt;<br>
+                &lt;div class="grid"&gt; <br>
+                &lt;p&gt;Grid 3&lt;/p&gt; <br>
+                &lt;/div&gt; <br>
+                &lt;/div&gt;
+            </code>
+            <h4>CSS :</h4>
+            <code>
+                .grid-container {
+                display:flex;
+                flex-wrap: wrap;
+                padding: 1rem;
+                }
 
-                <hr class="about-line">
-                <!-- Website Grid Structure-->
-                <section id=grid-structure class="element">
-                    <h2>Grid Structure</h2>
-                    <h3>CSS Selector</h3>
-                    <p>.grid-container, .grid</p>
-                    <h3>Sample Code</h3>
-                    <h4>HTML :</h4>
-                    <code>
-                        &lt;div class="grid-container"&gt; <br>
-                        &lt;div class="grid"&gt;    <br>
-                        &lt;p&gt;Grid 1&lt;/p&gt; <br>
-                        &lt;/div&gt; <br>
-                        &lt;div class="grid"&gt;<br>
-                        &lt;p&gt;Grid 2&lt;/p&gt; <br>
-                        &lt;/div&gt;<br>
-                        &lt;div class="grid"&gt; <br>
-                        &lt;p&gt;Grid 3&lt;/p&gt; <br>
-                        &lt;/div&gt; <br>
-                        &lt;/div&gt;
-                    </code>
-                    <h4>CSS :</h4>
-                    <div class="codestyle">
-                        <code>
-                            .grid-container {
-                            display:flex;
-                            flex-wrap: wrap;
-                            padding: 1rem;
-                            }
+                <br>
+                .grid {
+                flex:1 1 15rem;
+                background-color: rgb(35,131,194);
+                text-align: center;
+                }
+            </code>
 
-                            <br>
-                            .grid {
-                            flex:1 1 15rem;
-                            background-color: rgb(35,131,194);
-                            text-align: center;
-                            }
-                        </code>
-                    </div>
-                    <h3>Rendered Element</h3>
-                    <div class="col-container">
-                        <div class="row-2">
-                            <p>Grid 1</p>
-                        </div>
-                        <div class="row-2">
-                            <p>Grid 2</p>
-                        </div>
-                    </div>
-                    <div class="col-container">
-                        <div class="row-3">
-                            <p>Grid 1</p>
-                        </div>
-                        <div class="row-3">
-                            <p>Grid 2</p>
-                        </div>
-                        <div class="row-3">
-                            <p>Grid 3</p>
-                        </div>
-                    </div>
-                </section>
-                <hr class="about-line">
-                <!-- Website Color Swatches -->
-                <section id=Color-Swatches class="element">
-                    <h2>Color Swatches</h2>
-                    <h3>Sample Code</h3>
-                    <div class="codestyle">
-                    <code>&lt;img src="img/swatch.jpg" alt="Color  Swatch" &gt;</code>
-                    <h3>Rendered Element</h3>
-                    <img src="img/color.jpg" alt="Color Swatch">
-                    </div>
-                </section>
-            </section>
-            <hr class="about-line">
-            <section id="assignment1" class="element">
-                <h2>Work</h2>
-                <p class="codestyle">
+            <h3>Rendered Element</h3>
+            <div class="col-container">
+                <div class="row-2">
+                    <p>Grid 1</p>
+                </div>
+                <div class="row-2">
+                    <p>Grid 2</p>
+                </div>
+            </div>
+            <div class="col-container">
+                <div class="row-3">
+                    <p>Grid 1</p>
+                </div>
+                <div class="row-3">
+                    <p>Grid 2</p>
+                </div>
+                <div class="row-3">
+                    <p>Grid 3</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+        <section class="homePage-slide" id="tab-Contact">
+            <div class="element1">
+                <h2>Color Swatches</h2>
+                <h3>Sample Code</h3>
+                <code>&lt;img src="img/swatch.jpg" alt="Color  Swatch" &gt;</code>
+                <h3>Rendered Element</h3>
+                <img src="img/color.jpg" alt="Color Swatch">
+            </div>
+        </section>
+
+
+
+        <section class="homePage-slide" id="tab-work">
+            <h1>Work</h1>
+            <div class="element">
+                <h3>Animation</h3>
+                <p>
                     The following collections are my personal process of taking IAT 445 Immersive Environments. In this course, I learned the techniques for 3D computer animation and virtual world building techniques such as keyframing, performance animation, procedural methods and motion capture. Moreover, lighting and soundtrack generation were required in this course. Integrates hands -on fundamentals with design praxis and theoretical and research concerns. The course allowed me focusing on specific animation and behaviour modeling techniques and the human body details with among of physical moving such as walking, trotting and running. In this class, we were using Unity and Maya,modeling, to build up the game world and created a real time interaction in the space. The following collections were my personal process of taking IAT 445. I created a city and allow user to interact the model and setting in the scene. User can navigate and control the first person model to interact the scene and settings. When user was close to the telephone booth, the booth door will open and user can walk into the telephone booth. User can also follow the street light to explore other places and interiors. I found the course was a bit challenge since the program was code base and we needed to do centrain coding to have animations and interactions. It needed a lot of times to figure it out the broken code and errors. However, I still didn't change my goal of being an animator and I really appreciated the experience of working on Unity and what i learned from this class.
                 </p>
-                <img src="img/2.jpg" alt="assignment1" class="workimg">
-                <img src="img/4.jpg" alt="assignment1" class="workimg">
-            </section>
-            <hr class="about-line">
-            <section id="assignment2" class="element">
-                <h2></h2>
-                <p class="codestyle">
+                <img src="img/2.jpg" alt="assignment1" >
+                <img src="img/4.jpg" alt="assignment3" >
+            </div>
+        </section>
+        <section class="homePage-slide">
+            <div class="element">
+                <h3>Video editing</h3>
+                <p>
                     In IAT 344 Moving image, I worked in a group of three; we were producing a documentary short or narrative video of 3-5 minutes in a group of three.
                     In this project, We did a lot of background research of this community health center. We also did a lot of interviews with a doctor who worked there and a client in the community health center. Every week, we visited the community and the health center to film and get a variety of shots. We filmed together and we went over ideas together. We used Adobe Premiere Pro to edit our final video and inserted ambiance sound to enrich the level of the video. With this sound design, our video had more depth and effect. After watching the first editing together, we tried to generate the sound and reduce all the sound pitch in the film. We also asked our friends or family to give us critique so that we could improve the video from the feedback.  One of biggest challenge that we came across to in this project was planning and organizing the technical aspects such as interview, script, time, filming video and appointment with the clinic. We separated the heavy tasks to each member where they were more experienced in the field. However, I learned a lot on how to work as a team and how to work with a client. I also learned a lot of filming skill such as dolly, pan, and tilt, which were well used in the filming process. Lighting in the film was important because it changed the feeling and the emotions of the film. Post-production of a film allowed me to work on the special skills that camera and lighting weren't able to achieve such as sharpening the color, color contrast,and faded scene. I also really enjoyed doing sound design where the power of sound aids the storytelling process. As a team, we really enjoyed this experience and appreciated the opportunity to work with our client.
-
-
                 </p>
-                <img src="img/3.jpg" alt="assignment2" class="workimg">
-            </section>
-            <hr class="about-line">
-            <section id="bio" class="element">
-                <h2>Bio</h2>
-                <p class="codestyle">
+                <img src="img/3.jpg" alt="assignment2">
+            </div>
+        </section>
+        <section class="homePage-slide" id="tab-About">
+            <h1>About</h1>
+            <div class="element">
+                <h3>Bio</h3>
+                <p>
                     I am Angelica Lin; former Art Major pursuing a Bachelor’s of Arts in the School of Interactive Arts and Technology at Simon Fraser University. I have a great passion for animation and video editing. I aim to become an animator or a film producer. I was inspired by the Japanese animated movie called “Spirited Away ” by Hayao Miyazaki when I was young. The movie has a certain magic to it that makes it extremely heartfelt and genuine. I aim to create that same magic in my own works. I enjoy building and animating interaction models as well as the planning and coordinate various aspects of film production. The techniques for 3D computer animation such as keyframing, performance animation, procedural methods and motion capture and as well as the lighting and soundtrack generation related to video editing. I strive to utilize my knowledge in these two design fields to create a logical and smooth design in my work.
                 </p>
-            </section>
+            </div>
+        </section>
 
+    </main>
+    <script src="main.js"></script>
 
-</div>
     <footer class="footer-content">
         <p>
-            &copy;Angelica Lin o&nbsp;&nbsp;|
+            &copy;Angelica Lin &nbsp;&nbsp;|
             <a href="style.html">&nbsp;&nbsp;Styleguide&nbsp;&nbsp;&nbsp;</a>|
             <a href="citation.html">&nbsp;&nbsp;Citations&nbsp;&nbsp;&nbsp;</a>|
-            <a href="https://github.com/AngelicaLinLin/Portfolio">&nbsp;&nbsp;&nbsp;GitLab</a>
+            <a href="https://github.com/AngelicaLinLin/Portfolio">&nbsp;&nbsp;&nbsp;GitHub</a>
         </p>
     </footer>
 </body>
