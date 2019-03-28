@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>home</title>
@@ -14,37 +14,85 @@
 <body>
     <!-- Hero -->
     <section class="homePage">
-        <h1>Angelica</h1>
-        <h3>Portfolio Page</h3>
+        <h1>Angelica's Portfolio</h1>
+
+        <div class="content">
+            <div class="content__container">
+
+                <p class="content__container__text">
+                    I'm an
+                </p>
+
+                <ul class="content__container__list">
+                    <li class="content__container__list__item">UX designer</li>
+                    <li class="content__container__list__item">UI designer</li>
+                    <li class="content__container__list__item">Animatior</li>
+                    <li class="content__container__list__item">Editor</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="homePage-container">
             <a class="homePage1" href="home.html">Home</a>
-            <a class="homePage1" href="project.html">Project</a>
+            <a class="homePage1" href="project.html">Projects</a>
             <a class="homePage1" href="about.html">About</a>
             <a class="homePage1" href="contact.html">Contact</a>
 
             <span class="homePage1-slider"></span>
         </div>
+        <div class="mouse_scroll">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scrollArrows firstAw"></span>
+                <span class="scrollArrows secondAw"></span>
+                <span class="scrollArrows tirdAw"></span>
+            </div>
+        </div>
     </section>
     <!-- Main -->
-    <main >
+    <main>
 
-        <section class="homePage-slide" id="tab-Project">
+        <section class="homePage-slide">
 
             <div class="fill">
+                <a href="project.html#tab-animation">
+                    <div class="hovereffect flyinLeft">
 
-                <img src="img/5.jpg" alt="assignment1" class="flyinLeft">
-
+                        <img class="img-responsive" src="img/5.jpg" alt="assignment2">
+                        <div class="overlay">
+                            <h2>Animation</h2>
+                            <p>
+                                Work
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
+
+
         </section>
-        <section class="homePage-slide" id="tab-Project">
+        <section class="homePage-slide">
             <div class="fill">
-                <img src="img/6.jpg" alt="assignment1" class="flyinRight">
+                <a href="project.html#tab-video">
+                    <div class="hovereffect flyinRight">
+                        <img class="img-responsive" src="img/6.jpg" alt="assignment1">
+                        <div class="overlay">
+                            <h2> Video Editing</h2>
+                            <p>
+                                Work
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
+
         </section>
+
 
     </main>
     <script src="main.js"></script>
-
     <footer class="footer-content">
         <p>
             &copy;Angelica Lin &nbsp;&nbsp;|
