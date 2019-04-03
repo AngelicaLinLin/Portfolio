@@ -15,11 +15,11 @@
     <!-- Hero -->
     <section class="homePage">
         <h1>StyleGuide</h1>
-        <h3>Portfolio Page</h3>
+        <h3 class="colorChange">Portfolio Page</h3>
         <div class="homePage-container">
             <a class="homePage1" href="home.html">Home</a>
-            <a class="homePage1" href="#tab-work">Work</a>
-            <a class="homePage1" href="#tab-About">About</a>
+            <a class="homePage1" href="#work">Work</a>
+            <a class="homePage1" href="#about">About</a>
             <a class="homePage1" href="contact.html">Contact</a>
 
             <span class="homePage1-slider"></span>
@@ -63,29 +63,37 @@
                 <h3>Sample Code:</h3>
                 <h4>HTML :</h4>
 
-                <code>&lt;a href="#" class="navigation-button"&gt;Default Navigation Button&lt;/a&gt;</code>
+                <code>
+                    &lt;div class="homePage-container1"&gt;
+                    &lt;a class="homePage1" href="home.html"&gt;Home&lt;/a&gt;
+                    &lt;a class="homePage1" href="project.html"&gt;Projects&lt;/a&gt;
+                    &lt;a class="homePage1" href="about.html"&gt;About&lt;/a&gt;
+                    &lt;a class="homePage1" href="contact.html"&gt;Contact&lt;/a&gt;
+                    &lt;/div&gt;
+                </code>
                 <h4>CSS :</h4>
                 <code>
-                    .navigation-button {
-                    color:rgb(30,55,153);
-                    text-decoration: none;
-                    transition-duration: 1s;
-                    padding: 1rem;
-                    margin-right: 0.5rem;
-                    }
-
-
-                    .navigation-button:hover, .navigation-button:active, .navigation-button:focus {
-                    color: rgb(250,250,250);
-                    background-color: rgb(30,55,153);
-                    text-decoration: none;
+                    .homePage-container1 {
+                    display: flex;
+                    flex-direction: row;
+                    bottom: 10%;
+                    width: 100%;
+                    height: 100px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                    background: #fff;
+                    z-index: 5;
                     }
                 </code>
 
                 <h3>Rendered Element:</h3>
-                <div class="buttonbg">
-                    <a href="#" class="navigation-button">Default Navigation Button</a>
+                <div class="homePage-container1">
+                    <a class="homePage1" href="home.html">Home</a>
+                    <a class="homePage1" href="project.html">Projects</a>
+                    <a class="homePage1" href="about.html">About</a>
+                    <a class="homePage1" href="contact.html">Contact</a>
+
                 </div>
+
             </div>
         </section>
 
@@ -93,18 +101,29 @@
             <div class="element1">
                 <h2>Image as a Link</h2>
                 <h3>CSS Selector:</h3>
-                <p>.zoom</p>
+                <p>.overlay</p>
                 <h3>Sample Code:</h3>
                 <code>
                     &lt;a href="1.jpg"&gt;
-                    &lt;img class="zoom" src="img/1.jpg" alt="1 reference" &gt;
+                    &lt;img  src="img/1.jpg" alt="assignment2" &gt;
+                    &lt;div class="overlay"&gt;
+                    &lt;h2&gt;IMAGE &lt;/h2&gt;
+                    &lt;p&gt;Work &lt;/p&gt;
+                    &lt;/div&gt;
                     &lt;/a&gt;
-
                 </code>
                 <h4>Rendered element:</h4>
                 <p>The image is a link. You can click on it.</p>
-                <a href="1.jpg">
-                    <img class="zoom" src="img/1.jpg" alt="1 reference">
+                <a href="project.html#tab-animation">
+                    <div class="hovereffect flyinLeft">
+                        <img  src="img/1.jpg" alt="assignment2">
+                        <div class="overlay">
+                            <h2>IMAGE</h2>
+                            <p>
+                                Work
+                            </p>
+                        </div>
+                    </div>
                 </a>
 
             </div>
@@ -298,10 +317,10 @@
 
 
 
-        <section class="homePage-slide" id="#tab-work">
+        <section class="homePage-slide" id="work">
             <h1>Work</h1>
             <div class="element">
-                <h3>Animation</h3>
+
                 <p>
                     The following collections are my personal process of taking IAT 445 Immersive Environments. In this course, I learned the techniques for 3D computer animation and virtual world building techniques such as keyframing, performance animation, procedural methods and motion capture. Moreover, lighting and soundtrack generation were required in this course. Integrates hands -on fundamentals with design praxis and theoretical and research concerns. The course allowed me focusing on specific animation and behaviour modeling techniques and the human body details with among of physical moving such as walking, trotting and running. In this class, we were using Unity and Maya,modeling, to build up the game world and created a real time interaction in the space. The following collections were my personal process of taking IAT 445. I created a city and allow user to interact the model and setting in the scene. User can navigate and control the first person model to interact the scene and settings. When user was close to the telephone booth, the booth door will open and user can walk into the telephone booth. User can also follow the street light to explore other places and interiors. I found the course was a bit challenge since the program was code base and we needed to do centrain coding to have animations and interactions. It needed a lot of times to figure it out the broken code and errors. However, I still didn't change my goal of being an animator and I really appreciated the experience of working on Unity and what i learned from this class.
                 </p>
@@ -319,10 +338,10 @@
                 <img src="img/3.jpg" alt="assignment2">
             </div>
         </section>
-        <section class="homePage-slide" id="#tab-About">
+        <section class="homePage-slide" id="about">
             <h1>About</h1>
             <div class="element">
-                <h3>Bio</h3>
+
                 <p>
                     I am Angelica Lin; former Art Major pursuing a Bachelor’s of Arts in the School of Interactive Arts and Technology at Simon Fraser University. I have a great passion for animation and video editing. I aim to become an animator or a film producer. I was inspired by the Japanese animated movie called “Spirited Away ” by Hayao Miyazaki when I was young. The movie has a certain magic to it that makes it extremely heartfelt and genuine. I aim to create that same magic in my own works. I enjoy building and animating interaction models as well as the planning and coordinate various aspects of film production. The techniques for 3D computer animation such as keyframing, performance animation, procedural methods and motion capture and as well as the lighting and soundtrack generation related to video editing. I strive to utilize my knowledge in these two design fields to create a logical and smooth design in my work.
                 </p>
