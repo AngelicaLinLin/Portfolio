@@ -535,6 +535,7 @@ input:focus, input:hover {
 
 /*------------Mobile view-----------------*/  
 
+
 @media (max-width: 55rem) {
 
 
@@ -597,27 +598,31 @@ input:focus, input:hover {
         margin-top: 1rem;
     }
 
+
+}
+@media(max-width:80rem) {
     .pos {
         display: block;
         flex: 0 1 100%;
     }
-    .pos img{
 
-        max-width:80%;
-        margin-left:3rem;
-    }
-    .pos h2{
-     display:block;
-     margin-left:1rem;
-  }
+        .pos img {
+            max-width: 80%;
+            margin-left: 3rem;
+        }
 
-    .pos p{
+        .pos h2 {
+            display: block;
+            margin-left: 1rem;
+        }
 
-        margin-top:3rem;
-        margin-left:3rem;
-    }
-
+        .pos p {
+            margin-top: 3rem;
+            margin-left: 3rem;
+        }
 }
+
+
 /*------Mouse scroll icon------------*/
 
 
