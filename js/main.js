@@ -1,4 +1,5 @@
 ﻿
+//Navigation
 class StickyNavigation {
     
     constructor() {
@@ -45,7 +46,7 @@ class StickyNavigation {
         let newCurrentTab;
         let self = this;
         $('.homePage1').each(function() {
-            let id = $(this).attr('href');
+            let id = $(this);//.attr('href');
             let offsetTop = $(id).offset().top - self.tabContainerHeight;
             let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
             if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
@@ -76,59 +77,48 @@ class StickyNavigation {
 new StickyNavigation();
 
 
-var elem = $(".fadein-fast");
-function isScrolledIntoView(elem, window) {
-    var docViewTop = $(window).scrollTop() + 400;
-    var docViewBottom = docViewTop + $(window).height() -400;
-    
-    var elemTop = elem.offset().top;
-    var elemBottom = elemTop + elem.height();
-    
-    return (docViewBottom <= elemBottom && elemTop <= docViewTop);
+//scroll animation
+$(document).ready(function() {
+var windowResponsive = $(window).width();
+
+if(windowResponsive > 1000) {
+    windowResponsive = 800;
+} else {
+    windowResponsive = 900;
 }
-$(document).on("scroll", function () {
-    if (isScrolledIntoView(elem, window)) {
-        elem.addClass("ff");
-                $(".fadein-fast").css('opacity', '1');
-    } 
-});
+    // Fly In left 
+    var elem2 = $(".flyin-left");
 
+     $(document).on("scroll", function () { 
+        if($(window).scrollTop() > elem2.offset().top - windowResponsive) {
+            elem2.addClass("flyinLeft");
+            elem2.removeClass("flyin-left");
+                    elem2.show();
+                    elem2.css('opacity', '1');
+        }
+    });
 
+    // Fly In left 2
+    var elem1 = $(".flyin-left-2");
+     $(document).on("scroll", function () {
+        if ($(window).scrollTop() > elem1.offset().top - windowResponsive) {
+            elem1.addClass("flyinLeft");
+            elem1.removeClass("flyin-left-2");
+                    elem2.show();
+                    elem2.css('opacity', '1');
+        }
+    });
 
-// Fly In left 
-var elem2 = $(".flyin-left");
-function isScrolledIntoView(elem2) {
-    var docViewTop = $(window).scrollTop() + 400;
-    var docViewBottom = docViewTop + $(window).height() - 400;
-    
-    var elemTop = elem2.offset().top;
-    var elemBottom = elemTop + elem2.height();
-    
-    return (docViewBottom <= elemBottom && elemTop <= docViewTop);
-}
-$(document).on("scroll", function () {
-    if (isScrolledIntoView(elem2)) {
-        elem2.addClass("fll");
-                elem2.show();
-                elem2.css('opacity', '1');
-    }
-});
+    // Fly In Right
+    var elem3 = $(".flyin-right");
 
-// Fly In Right
-var elem3 = $(".flyin-right");
-function isScrolledIntoView(elem3) {
-    var docViewTop = $(window).scrollTop() + 400;
-    var docViewBottom = docViewTop + $(window).height() -400;
-    
-    var elemTop = elem3.offset().top;
-    var elemBottom = elemTop + elem3.height();
-    
-    return (docViewBottom <= elemBottom && elemTop <= docViewTop);
-}
-$(document).on("scroll", function () {
-    if (isScrolledIntoView(elem3)) {
-                elem3.show();
-        elem3.addClass("flr");
-                elem3.css('opacity', '1');
-    }
-});
+    $(document).on("scroll", function () {
+console.log($(window).width() * 1.4);
+        if ($(window).scrollTop() > elem3.offset().top - windowResponsive) {
+                    elem3.show();
+            elem3.addClass("flyinRight");
+            elem3.removeClass("flyin-right");
+                    elem3.css('opacity', '1');
+        }
+    });
+})
