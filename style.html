@@ -5,6 +5,7 @@
     <title>home</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type='text/css'>
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/icon" >
     <script src="http://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
@@ -12,17 +13,27 @@
 </head>
 
 <body>
-    <!-- Hero -->
+    <!-- styleguide -->
     <section class="homePage">
-        <h1>StyleGuide</h1>
+        <h1 >StyleGuide</h1>
         <h3 class="colorChange">Portfolio Page</h3>
         <div class="homePage-container">
             <a class="homePage1" href="home.html">Home</a>
             <a class="homePage1" href="#work">Work</a>
-            <a class="homePage1" href="#about">About</a>
+            <a class="homePage1" href="about.html">About</a>
             <a class="homePage1" href="contact.html">Contact</a>
 
-            <span class="homePage1-slider"></span>
+
+        </div>
+        <div class="mouse_scroll">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scrollArrows firstAw"></span>
+                <span class="scrollArrows secondAw"></span>
+                <span class="scrollArrows tirdAw"></span>
+            </div>
         </div>
     </section>
     <!-- Main -->
@@ -105,7 +116,7 @@
                 <h3>Sample Code:</h3>
                 <code>
                     &lt;a href="1.jpg"&gt;
-                    &lt;img  src="img/1.jpg" alt="assignment2" &gt;
+                    &lt;img  src="img/5.jpg" alt="assignment2" &gt;
                     &lt;div class="overlay"&gt;
                     &lt;h2&gt;IMAGE &lt;/h2&gt;
                     &lt;p&gt;Work &lt;/p&gt;
@@ -115,17 +126,16 @@
                 <h4>Rendered element:</h4>
                 <p>The image is a link. You can click on it.</p>
                 <a href="project.html#tab-animation">
-                    <div class="hovereffect flyinLeft">
-                        <img  src="img/1.jpg" alt="assignment2">
+                    <div class="hoverEf flyin-left">
+                        <img class="imgresponsive" src="img/5.jpg" alt="assignment2">
                         <div class="overlay">
-                            <h2>IMAGE</h2>
+                            <h2>Animation</h2>
                             <p>
-                                Work
+                                Immersive Environments
                             </p>
                         </div>
                     </div>
                 </a>
-
             </div>
         </section>
         <section class="homePage-slide">
@@ -207,7 +217,7 @@
                 </code>
 
                 <h3>Rendered Element</h3>
-                <form> <label class="label-field" id="label">Default Label: </label><input class="text-field" type="text" name="text-field" maxlength="15" placeholder="Default Text Input"></form>
+                <form> <label class="label-field" for="label">Default Label: </label><input id="label" class="text-field" type="text" name="text-field" maxlength="15" placeholder="Default Text Input"></form>
             </div>
         </section>
 
@@ -224,87 +234,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  rhoncus. Duis et fermentum purus. Nulla ultricies dui eu felis placerat imperdiet rutrum ut urna. In at erat lorem. Suspendisse potenti. Quisque aliquet dui vitae mi faucibus.</p>
             </div>
         </section>
-        <!--<section class="homePage-slide" ">
-            <div class="element1">
-                <h2>Bullet List</h2>
-                <h3>CSS Selector:</h3>
-                <p>ul</p>
-                <h3>Sample Code</h3>
-                <h4>HTML :</h4>
-                <code>
-                    &lt;ul&gt;<br>
-                    &lt;li&gt; item 1&lt;/li&gt; <br>
-                    &lt;li&gt; item 2&lt;/li&gt; <br>
-                    &lt;li&gt; item 3&lt;/li&gt; <br>
-                    &lt;/ul&gt;
-                </code>
 
-                <h3>Rendered Element</h3>
-                <ul>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                </ul>
-            </div>
-        </section>-->
-        <!--<section class="homePage-slide" >
-            <div class="element1">
-                <h2>Grid Structure</h2>
-                <h3>CSS Selector</h3>
-                <p>.grid-container, .grid</p>
-                <h3>Sample Code</h3>
-                <h4>HTML :</h4>
-                <code>
-                    &lt;div class="grid-container"&gt; <br>
-                    &lt;div class="grid"&gt;    <br>
-                    &lt;p&gt;Grid 1&lt;/p&gt; <br>
-                    &lt;/div&gt; <br>
-                    &lt;div class="grid"&gt;<br>
-                    &lt;p&gt;Grid 2&lt;/p&gt; <br>
-                    &lt;/div&gt;<br>
-                    &lt;div class="grid"&gt; <br>
-                    &lt;p&gt;Grid 3&lt;/p&gt; <br>
-                    &lt;/div&gt; <br>
-                    &lt;/div&gt;
-                </code>
-                <h4>CSS :</h4>
-                <code>
-                    .grid-container {
-                    display:flex;
-                    flex-wrap: wrap;
-                    padding: 1rem;
-                    }
-
-                    <br>
-                    .grid {
-                    flex:1 1 15rem;
-                    background-color: rgb(35,131,194);
-                    text-align: center;
-                    }
-                </code>
-
-                <h3>Rendered Element</h3>
-                <div class="col-container">
-                    <div class="row-2">
-                        <p>Grid 1</p>
-                    </div>
-                    <div class="row-2">
-                        <p>Grid 2</p>
-                    </div>
-                </div>
-                <div class="col-container">
-                    <div class="row-3">
-                        <p>Grid 1</p>
-                    </div>
-                    <div class="row-3">
-                        <p>Grid 2</p>
-                    </div>
-                    <div class="row-3">
-                        <p>Grid 3</p>
-                    </div>
-                </div>
-            </div>
-        </section>-->
         <section class="homePage-slide">
             <div class="element1">
                 <h2>Color Swatches</h2>
@@ -349,7 +279,7 @@
         </section>
 
     </main>
-    <script src="main.js"></script>
+    
     <footer class="footer-content">
         <p>
             &copy;Angelica Lin &nbsp;&nbsp;|
